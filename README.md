@@ -2,14 +2,6 @@
 
 > **Architecture case study.** Source code is private and owned by the client. This repository contains original documentation only: no client code, data, credentials or assets.
 
-## Problem
-
-An insurance agency manages a team of field agents. Managers needed visibility of agents' activity, leads and location, and agents needed a simple mobile tool to record their work.
-
-## Solution
-
-A CRM made of three apps on one backend: a web admin dashboard for managers, an admin mobile app, and an agent mobile app. Activity, leads and locations flow into a shared database, with push notifications and map views for oversight.
-
 ## Architecture
 
 ```mermaid
@@ -22,6 +14,14 @@ flowchart LR
   FCM --> AG
   API --> ST[(Object storage)]
 ```
+
+## Problem
+
+An insurance agency manages a team of field agents. Managers needed visibility of agents' activity, leads and location, and agents needed a simple mobile tool to record their work.
+
+## Solution
+
+A CRM made of three apps on one backend: a web admin dashboard for managers, an admin mobile app, and an agent mobile app. Activity, leads and locations flow into a shared database, with push notifications and map views for oversight.
 
 ## Modules
 
